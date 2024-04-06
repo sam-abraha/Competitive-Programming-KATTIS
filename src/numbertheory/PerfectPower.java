@@ -34,15 +34,13 @@ public class PerfectPower {
 	    for(int i=2;i<=sqrt;i++) {
 			double p = Math.round(Math.log(x)/Math.log(i)); // x =b^p <=> log(base b) x = p <=> logx/logp
 			if(x==Math.pow(i, p)) { // check if x = i^p
-			/*	if(flag) {
+			  if(flag) {
 					while(p%2==0) {
 						p/=2;
 				  }
 				}
-			*/
-				//System.out.println(x);
-				//System.out.println(i);
-				//System.out.println(p);
+			
+
 				return (long)p; // return the perfect power
 		}
 		
